@@ -1,0 +1,16 @@
+name: AustinB Portfolio Theme
+description: Custom theme built by Austin Brown for a web dev portfolio.
+type: theme
+version: VERSION
+core_version_requirement: ^8 || ^9
+base theme: false
+libraries:
+  - austinb_portfolio_theme/styles
+  - austinb_portfolio_theme/scripts
+
+regions:
+  nav: Nav
+  side: Side
+  content: Content
+  sub_content: Sub Content
+  footer: Footer

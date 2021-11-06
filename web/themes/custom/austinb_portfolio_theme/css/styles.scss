@@ -1,0 +1,131 @@
+// Fonts
+@font-face {
+    font-family: "Segoe UI"; /*a name to be used later*/
+    src: url("../fonts/segoeui.ttf"); /*URL to font*/
+}
+@font-face {
+    font-family: "Segoe-UI-Bold"; /*a name to be used later*/
+    src: url("../fonts/segoeuib.ttf"); /*URL to font*/
+}
+
+:root {
+    --base-text: #2a2a2a;
+    --content-background: #fcf8ea;
+    --accent-borders: #eed7a1;
+    --linktext: #9b7827;
+    --light: #ffffff;
+    --footer-link: #8caec8;
+    --footer-text: #c8e7ff;
+    --footer-background: #475c6c;
+    --background: #f7efd2;
+    --hover-background: #111111;
+    --hover-color: #ffffff;
+}
+
+body {
+    transition: ease-in-out 200ms;
+    background-color: var(--background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Navigation Styling
+#austinb_nav {
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: sticky;
+    background: var(--light);
+    transition: ease-in-out 200ms;
+    box-shadow: 0px 0px 10px var(--background);
+    #austinb_nav_inner {
+        width: calc(100% - 30px);
+        max-width: 1220px;
+        margin: 0 auto;
+        padding: 15px 10px;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #block-austinb-portfolio-theme-branding {
+                padding: 0;
+                margin: 0;
+                letter-spacing: 0px;
+                text-align: left;
+                font: normal normal 18px/24px Segoe-UI-Bold;
+                color: var(--base-text);
+                font-style: normal;
+            }
+            #block-sitetaglineicon {
+                p {
+                    margin: 0;
+                    margin-left: 10px;
+                    span {
+                        svg {
+                            width: 28px;
+                            height: 28px;
+                            path {
+                                fill: var(--base-text);
+                            }
+                        }
+                    }
+                }
+            }
+            #block-austinb-portfolio-theme-main-menu {
+                ul {
+                    list-style: none;
+                    li {
+                        a {
+                            text-align: left;
+                            font: normal normal normal 16px/21px Segoe UI;
+                            letter-spacing: 0px;
+                            color: var(--base-text);
+                            padding: 6px 18px;
+                            border: 2px solid var(--accent-borders);
+                            border-radius: 20px;
+                        }
+                        a:hover {
+                            transition: ease-in-out 200ms;
+                            color: var(--hover-color);
+                            background-color: var(--hover-background);
+                        }
+                    }
+                }
+            }
+            #block-themetoggle {
+                margin-left: auto;
+                p {
+                    margin: 0;
+                    svg {
+                        border-radius: 50%;
+                        border: 2px solid var(--accent-borders);
+                        background-color: var(--content-background);
+                        width: 25px;
+                        height: 25px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        margin: 0;
+                        margin-right: 15px;
+                        padding: 4px;
+                        path {
+                            fill: var(--base-text);
+                        }
+                    }
+                    svg:hover {
+                        transition: ease-in-out 200ms;
+                        background-color: var(--hover-background);
+                        path {
+                            fill: var(--hover-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
