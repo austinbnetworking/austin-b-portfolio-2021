@@ -1,0 +1,21 @@
+uuid: 4ecf3983-1e20-4c31-b9dc-b345b9abdc24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hobbies
+    - node.type.about_me
+  module:
+    - text
+id: node.about_me.field_hobbies
+field_name: field_hobbies
+entity_type: node
+bundle: about_me
+label: Hobbies
+description: 'Authors hobbies, looks best if formatted using an unordered list.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,17 @@
+uuid: 3bd372c8-f19f-4833-b871-7944e34418b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'About Me'
+type: about_me
+description: 'Use <i>About Me</i> for a more detailed about me page, including a view reference field. (Ex. Recent Work)'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

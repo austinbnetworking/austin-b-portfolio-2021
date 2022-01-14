@@ -1,0 +1,25 @@
+uuid: af3a7a19-6aab-4f09-bcc0-c505c3969f04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.test.field_grid
+    - paragraphs.paragraphs_type.test
+  module:
+    - paragraphs_grid
+id: paragraph.test.default
+targetEntityType: paragraph
+bundle: test
+mode: default
+content:
+  field_grid:
+    weight: 0
+    settings:
+      excluded_view_modes:
+        - preview
+    third_party_settings: {  }
+    type: grid_widget
+    region: content
+hidden:
+  created: true
+  status: true

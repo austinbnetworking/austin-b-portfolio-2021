@@ -1,0 +1,30 @@
+uuid: 1ac04e13-b50f-4a87-9474-73c9a5a294b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_project_image
+    - paragraphs.paragraphs_type.project_image
+  module:
+    - entity_reference_revisions
+id: paragraph.project_image.field_project_image
+field_name: field_project_image
+entity_type: paragraph
+bundle: project_image
+label: 'Project Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      project_image: project_image
+    target_bundles_drag_drop:
+      project_image:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

@@ -1,0 +1,122 @@
+uuid: 5f9eeaa1-572e-4857-a629-b3bda2ec5e7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about_me.body
+    - field.field.node.about_me.field_author
+    - field.field.node.about_me.field_author_external_links
+    - field.field.node.about_me.field_body_header
+    - field.field.node.about_me.field_company_link
+    - field.field.node.about_me.field_content_reference
+    - field.field.node.about_me.field_hobbies
+    - field.field.node.about_me.field_notable_skills
+    - field.field.node.about_me.field_title
+    - node.type.about_me
+  module:
+    - link
+    - linkicon
+    - text
+    - user
+    - viewsreference
+id: node.about_me.default
+targetEntityType: node
+bundle: about_me
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_author:
+    weight: 102
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_author_external_links:
+    weight: 105
+    label: hidden
+    settings:
+      target: _blank
+      linkicon_prefix: fa
+      linkicon_wrapper_class: ''
+      linkicon_icon_class: ''
+      linkicon_style: ''
+      linkicon_color: ''
+      linkicon_maxlength: 60
+      linkicon_global_title: ''
+      linkicon_position: ''
+      linkicon_size: ''
+      url_only: false
+      url_plain: false
+      rel: '0'
+      linkicon_link: false
+      linkicon_load: false
+      linkicon_vertical: false
+      linkicon_tooltip: false
+      linkicon_no_text: false
+      linkicon_bundle: ''
+      trim_length: 80
+    third_party_settings: {  }
+    type: linkicon
+    region: content
+  field_body_header:
+    weight: 106
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_company_link:
+    weight: 104
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_content_reference:
+    weight: 109
+    label: hidden
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_hobbies:
+    weight: 107
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_notable_skills:
+    weight: 108
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title:
+    weight: 103
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: c3541590-cf7b-4bcf-b05b-42f62e0b0845
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - austinb_portfolio_theme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: austinb_portfolio_theme_content
+theme: austinb_portfolio_theme
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

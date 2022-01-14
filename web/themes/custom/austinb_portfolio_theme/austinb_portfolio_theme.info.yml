@@ -9,8 +9,7 @@ libraries:
   - austinb_portfolio_theme/scripts
 
 regions:
-  nav: Nav
-  side: Side
-  content: Content
-  sub_content: Sub Content
+  navigation: Navigation
+  breadcrumb: Breadcrumb
+  content: Main Content
   footer: Footer

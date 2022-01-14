@@ -1,0 +1,21 @@
+uuid: e98d4f4e-cb12-488e-b5f6-8c868bf017a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_notable_skills
+    - node.type.about_me
+  module:
+    - text
+id: node.about_me.field_notable_skills
+field_name: field_notable_skills
+entity_type: node
+bundle: about_me
+label: 'Notable Skills'
+description: 'Author''s notable skills. Looks best if formatted using an unordered list.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,23 @@
+uuid: 5002700a-845c-4257-b253-49797f234186
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - paragraphs_grid
+id: paragraph.field_grid
+field_name: field_grid
+entity_type: paragraph
+type: grid_field_type
+settings:
+  optional:
+    offset: offset
+    order: 0
+  view_modes_enabled: 1
+module: paragraphs_grid
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

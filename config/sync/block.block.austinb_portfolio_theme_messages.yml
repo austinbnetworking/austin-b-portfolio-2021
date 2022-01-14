@@ -1,0 +1,22 @@
+uuid: 34ce008f-ce6a-4b39-a922-da105d233cc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - austinb_portfolio_theme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: austinb_portfolio_theme_messages
+theme: austinb_portfolio_theme
+region: content
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

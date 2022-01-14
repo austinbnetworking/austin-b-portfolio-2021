@@ -1,0 +1,14 @@
+uuid: ab4218ca-92a2-4983-b5fd-e6d48089a085
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: current_page_title
+label: 'Current Page Title'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: -5
+relationships: {  }
