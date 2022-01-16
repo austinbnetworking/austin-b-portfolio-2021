@@ -1,0 +1,25 @@
+uuid: 9949dfd8-70eb-4fd6-a542-38a55750811d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_main:3ee724aa-35cb-4f1a-bcf7-1db095bf98bb'
+  module:
+    - block_content
+  theme:
+    - austinb_portfolio_theme
+id: footermaincontent
+theme: austinb_portfolio_theme
+region: footer_left
+weight: 0
+provider: null
+plugin: 'block_content:3ee724aa-35cb-4f1a-bcf7-1db095bf98bb'
+settings:
+  id: 'block_content:3ee724aa-35cb-4f1a-bcf7-1db095bf98bb'
+  label: 'Footer Main Content'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

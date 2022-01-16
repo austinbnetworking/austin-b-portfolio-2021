@@ -34,91 +34,85 @@ body {
   padding: 0;
 }
 
-#austinb_nav {
-  width: 100%;
-  z-index: 1;
+.navigation-wrapper {
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
-  position: sticky;
-  background: var(--light);
-  transition: ease-in-out 200ms;
-  box-shadow: 0px 0px 10px var(--background);
+  z-index: 1;
 }
-#austinb_nav #austinb_nav_inner {
-  width: calc(100% - 30px);
-  max-width: 1220px;
+.navigation-wrapper .region-navigation {
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 15px 10px;
-}
-#austinb_nav #austinb_nav_inner div {
+  padding: 1rem 2rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
 }
-#austinb_nav #austinb_nav_inner div #block-austinb-portfolio-theme-branding {
-  padding: 0;
+.navigation-wrapper .region-navigation .site-branding .site-branding__text {
+  display: block;
   margin: 0;
-  letter-spacing: 0px;
-  text-align: left;
-  font: normal normal 18px/24px Segoe-UI-Bold;
-  color: var(--base-text);
+  padding: 0;
+}
+.navigation-wrapper .region-navigation .site-branding .site-branding__text .site-branding__slogan {
+  margin: 0;
+  word-spacing: unset;
+  font-family: "Segoe-UI-Bold";
+  font-size: 1.25rem;
   font-style: normal;
 }
-#austinb_nav #austinb_nav_inner div #block-sitetaglineicon p {
-  margin: 0;
-  margin-left: 10px;
+.navigation-wrapper .region-navigation .site-branding .site-branding__text .site-branding__slogan svg {
+  margin-left: 0.75rem;
 }
-#austinb_nav #austinb_nav_inner div #block-sitetaglineicon p span svg {
-  width: 28px;
-  height: 28px;
-}
-#austinb_nav #austinb_nav_inner div #block-sitetaglineicon p span svg path {
-  fill: var(--base-text);
-}
-#austinb_nav #austinb_nav_inner div #block-austinb-portfolio-theme-main-menu ul {
-  list-style: none;
-}
-#austinb_nav #austinb_nav_inner div #block-austinb-portfolio-theme-main-menu ul li a {
-  text-align: left;
-  font: normal normal normal 16px/21px Segoe UI;
-  letter-spacing: 0px;
-  color: var(--base-text);
-  padding: 6px 18px;
-  border: 2px solid var(--accent-borders);
-  border-radius: 20px;
-}
-#austinb_nav #austinb_nav_inner div #block-austinb-portfolio-theme-main-menu ul li a:hover {
-  transition: ease-in-out 200ms;
-  color: var(--hover-color);
-  background-color: var(--hover-background);
-}
-#austinb_nav #austinb_nav_inner div #block-themetoggle {
+.navigation-wrapper .region-navigation .navigation {
   margin-left: auto;
 }
-#austinb_nav #austinb_nav_inner div #block-themetoggle p {
-  margin: 0;
+.navigation-wrapper .region-navigation .navigation .content {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
 }
-#austinb_nav #austinb_nav_inner div #block-themetoggle p svg {
-  border-radius: 50%;
-  border: 2px solid var(--accent-borders);
+.navigation-wrapper .region-navigation .navigation .content .theme-toggle {
   background-color: var(--content-background);
-  width: 25px;
-  height: 25px;
+  border: 2px solid var(--background);
+  border-radius: 100%;
+  padding: 0.64rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   cursor: pointer;
-  margin: 0;
-  margin-right: 15px;
-  padding: 4px;
 }
-#austinb_nav #austinb_nav_inner div #block-themetoggle p svg path {
-  fill: var(--base-text);
+.navigation-wrapper .region-navigation .navigation .content .theme-toggle svg {
+  width: 18px;
+  height: 18px;
 }
-#austinb_nav #austinb_nav_inner div #block-themetoggle p svg:hover {
-  transition: ease-in-out 200ms;
+.navigation-wrapper .region-navigation .navigation .content .theme-toggle:hover {
   background-color: var(--hover-background);
+  color: var(--hover-color);
+  transition: ease-in-out 150ms;
 }
-#austinb_nav #austinb_nav_inner div #block-themetoggle p svg:hover path {
-  fill: var(--hover-color);
+.navigation-wrapper .region-navigation .navigation .content .menu {
+  padding: 0;
+  padding-left: 1rem;
+  text-align: unset;
+}
+.navigation-wrapper .region-navigation .navigation .content .menu .menu-item {
+  padding-top: 0;
+}
+.navigation-wrapper .region-navigation .navigation .content .menu .menu-item a {
+  border: 2px solid var(--background);
+  border-radius: 2rem;
+  padding: 0.62rem 2rem;
+  display: block;
+  color: black;
+  font-family: "Segoe UI";
+}
+.navigation-wrapper .region-navigation .navigation .content .menu .menu-item a:hover {
+  background-color: var(--hover-background);
+  color: var(--hover-color);
+  transition: ease-in-out 150ms;
 }/*# sourceMappingURL=styles.css.map */

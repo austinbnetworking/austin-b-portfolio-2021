@@ -1,0 +1,25 @@
+uuid: a3ed53a0-3cfe-4abc-bad0-4999fa3449d7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:footer_external_links:0f09bca1-f374-4319-a073-d8c0bb0c0061'
+  module:
+    - block_content
+  theme:
+    - austinb_portfolio_theme
+id: footerlinks
+theme: austinb_portfolio_theme
+region: footer_right
+weight: 0
+provider: null
+plugin: 'block_content:0f09bca1-f374-4319-a073-d8c0bb0c0061'
+settings:
+  id: 'block_content:0f09bca1-f374-4319-a073-d8c0bb0c0061'
+  label: 'Footer Links'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,11 +1,11 @@
 uuid: b6b563bb-cbeb-47a8-86f1-d24ef953ddfe
 name: 'Austin Brown Portfolio'
 mail: austinbnetworking@gmail.com
-slogan: 'Hello, I''m Austin Brown.'
+slogan: 'Hello, I''m Austin Brown. <i class="far fa-handshake"></i>'
 page:
   403: ''
   404: ''
-  front: /node/7
+  front: /node/4
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

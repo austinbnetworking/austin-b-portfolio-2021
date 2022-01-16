@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.about_me.body
     - field.field.node.about_me.field_author
     - field.field.node.about_me.field_author_external_links
+    - field.field.node.about_me.field_author_image
     - field.field.node.about_me.field_body_header
     - field.field.node.about_me.field_company_link
     - field.field.node.about_me.field_content_reference
@@ -38,6 +39,7 @@ content:
 hidden:
   field_author: true
   field_author_external_links: true
+  field_author_image: true
   field_body_header: true
   field_company_link: true
   field_content_reference: true

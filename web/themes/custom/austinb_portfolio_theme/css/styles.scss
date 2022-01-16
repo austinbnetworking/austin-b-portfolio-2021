@@ -33,95 +33,80 @@ body {
 }
 
 // Navigation Styling
-#austinb_nav {
-    width: 100%;
-    z-index: 1;
+.navigation-wrapper { 
+    background-color: white;
+    position: sticky;
     top: 0;
     left: 0;
-    position: sticky;
-    background: var(--light);
-    transition: ease-in-out 200ms;
-    box-shadow: 0px 0px 10px var(--background);
-    #austinb_nav_inner {
-        width: calc(100% - 30px);
-        max-width: 1220px;
+    z-index: 1;
+    .region-navigation {
+        max-width: 1280px;
         margin: 0 auto;
-        padding: 15px 10px;
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            #block-austinb-portfolio-theme-branding {
-                padding: 0;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;  
+        .site-branding {
+            .site-branding__text {
+                display: block;
                 margin: 0;
-                letter-spacing: 0px;
-                text-align: left;
-                font: normal normal 18px/24px Segoe-UI-Bold;
-                color: var(--base-text);
-                font-style: normal;
-            }
-            #block-sitetaglineicon {
-                p {
+                padding: 0;
+                .site-branding__slogan { 
                     margin: 0;
-                    margin-left: 10px;
-                    span {
-                        svg {
-                            width: 28px;
-                            height: 28px;
-                            path {
-                                fill: var(--base-text);
-                            }
-                        }
+                    word-spacing: unset;
+                    font-family: "Segoe-UI-Bold";
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    svg { 
+                        margin-left: 0.75rem;
                     }
                 }
             }
-            #block-austinb-portfolio-theme-main-menu {
-                ul {
-                    list-style: none;
-                    li {
-                        a {
-                            text-align: left;
-                            font: normal normal normal 16px/21px Segoe UI;
-                            letter-spacing: 0px;
-                            color: var(--base-text);
-                            padding: 6px 18px;
-                            border: 2px solid var(--accent-borders);
-                            border-radius: 20px;
-                        }
-                        a:hover {
-                            transition: ease-in-out 200ms;
-                            color: var(--hover-color);
-                            background-color: var(--hover-background);
-                        }
+        }
+        .navigation { 
+            margin-left: auto;
+            .content { 
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                .theme-toggle {
+                    background-color: var(--content-background);
+                    border: 2px solid var(--background);
+                    border-radius: 100%;
+                    padding: 0.64rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: fit-content;
+                    cursor: pointer;
+                    svg { 
+                        width: 18px;
+                        height: 18px;
                     }
-                }
-            }
-            #block-themetoggle {
-                margin-left: auto;
-                p {
-                    margin: 0;
-                    svg {
-                        border-radius: 50%;
-                        border: 2px solid var(--accent-borders);
-                        background-color: var(--content-background);
-                        width: 25px;
-                        height: 25px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        cursor: pointer;
-                        margin: 0;
-                        margin-right: 15px;
-                        padding: 4px;
-                        path {
-                            fill: var(--base-text);
-                        }
-                    }
-                    svg:hover {
-                        transition: ease-in-out 200ms;
+                    &:hover {
                         background-color: var(--hover-background);
-                        path {
-                            fill: var(--hover-color);
+                        color: var(--hover-color);
+                        transition: ease-in-out 150ms;
+                    }
+                }
+                .menu { 
+                    padding: 0;
+                    padding-left: 1rem;
+                    text-align: unset;
+                    .menu-item { 
+                        padding-top: 0;
+                        a { 
+                            border: 2px solid var(--background);
+                            border-radius: 2rem;
+                            padding: 0.62rem 2rem;
+                            display: block;
+                            color: black;
+                            font-family: "Segoe UI";
+                            &:hover { 
+                                background-color: var(--hover-background);
+                                color: var(--hover-color);
+                                transition: ease-in-out 150ms;
+                            }
                         }
                     }
                 }
@@ -129,3 +114,93 @@ body {
         }
     }
 }
+
+// FOR THE INSPECTOR
+// .navigation-wrapper .region-navigation {
+//     max-width: 1280px;
+//     margin: 0 auto;
+//     padding: 1rem 2rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;  
+// }
+
+// /* Site Branding */
+// .navigation-wrapper .region-navigation .site-branding { }
+
+// .navigation-wrapper .region-navigation .site-branding .site-branding__text {
+//     display: block;
+//     margin: 0;
+//     padding: 0;
+// }
+
+// .navigation-wrapper .region-navigation .site-branding .site-branding__text .site-branding__slogan { 
+//     margin: 0;
+//     word-spacing: unset;
+//     font-family: "Segoe-UI-Bold";
+//     font-size: 1.25rem;
+//     font-style: normal;
+// }
+
+// .navigation-wrapper .region-navigation .site-branding .site-branding__text .site-branding__slogan svg { 
+//     margin-left: 0.75rem;
+// }
+
+// /* Navigation Menu */
+// .navigation-wrapper .region-navigation .navigation { 
+//     margin-left: auto;
+// }
+
+// .navigation-wrapper .region-navigation .navigation .content { 
+//     margin-top: 0;
+//     display: flex;
+//     align-items: center;
+// }
+
+// .navigation-wrapper .region-navigation .navigation .content .theme-toggle {
+//     background-color: var(--content-background);
+//     border: 2px solid var(--background);
+//     border-radius: 100%;
+//     padding: 0.64rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: fit-content;
+//     cursor: pointer;
+// }
+
+// .navigation-wrapper .region-navigation .navigation .content .theme-toggle:hover {
+//     background-color: var(--hover-background);
+//     color: var(--hover-color);
+//     transition: ease-in-out 150ms;
+// }
+
+// .navigation-wrapper .region-navigation .navigation .content .theme-toggle svg { 
+//     width: 18px;
+//     height: 18px;
+// }
+
+// .navigation-wrapper .region-navigation .navigation .content .menu { 
+//     padding: 0;
+//     padding-left: 1rem;
+//     text-align: unset;
+// }
+
+// .navigation-wrapper .region-navigation .navigation .content .menu .menu-item { 
+//     padding-top: 0;
+// }
+
+// .navigation-wrapper .region-navigation .navigation .content .menu .menu-item a { 
+//     border: 2px solid var(--background);
+//     border-radius: 2rem;
+//     padding: 0.62rem 2rem;
+//     display: block;
+//     color: black;
+//     font-family: "Segoe UI";
+// }
+
+// .navigation-wrapper .region-navigation .navigation .content .menu .menu-item a:hover { 
+//     background-color: var(--hover-background);
+//     color: var(--hover-color);
+//     transition: ease-in-out 150ms;
+// }

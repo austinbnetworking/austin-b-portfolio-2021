@@ -3,7 +3,7 @@ description: Custom theme built by Austin Brown for a web dev portfolio.
 type: theme
 version: VERSION
 core_version_requirement: ^8 || ^9
-base theme: false
+base theme: bartik
 libraries:
   - austinb_portfolio_theme/styles
   - austinb_portfolio_theme/scripts
@@ -12,4 +12,5 @@ regions:
   navigation: Navigation
   breadcrumb: Breadcrumb
   content: Main Content
-  footer: Footer
+  footer_left: Footer Left
+  footer_right: Footer RIght

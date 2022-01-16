@@ -3,7 +3,6 @@ ul.paragraphs-add-dialog-list {
   padding: 0;
   list-style-type: none;
 }
-
 ul.paragraphs-add-dialog-list input.field-add-more-submit {
   background-repeat: no-repeat;
   background-position: 10px;
@@ -19,8 +18,7 @@ ul.paragraphs-add-dialog-list input.field-add-more-submit {
 .paragraphs-add-dialog-row {
   padding: 5px;
 }
-
 .paragraphs-add-dialog-row input {
   width: 100%;
   min-width: 200px;
-}
+}/*# sourceMappingURL=paragraphs.modal.css.map */

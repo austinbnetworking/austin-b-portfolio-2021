@@ -6,19 +6,108 @@ dependencies:
     - field.field.node.about_me.body
     - field.field.node.about_me.field_author
     - field.field.node.about_me.field_author_external_links
+    - field.field.node.about_me.field_author_image
     - field.field.node.about_me.field_body_header
     - field.field.node.about_me.field_company_link
     - field.field.node.about_me.field_content_reference
     - field.field.node.about_me.field_hobbies
     - field.field.node.about_me.field_notable_skills
     - field.field.node.about_me.field_title
+    - image.style.large
     - node.type.about_me
   module:
+    - field_group
     - link
     - linkicon
+    - svg_image
     - text
     - user
     - viewsreference
+third_party_settings:
+  field_group:
+    group_author_information:
+      children:
+        - field_author_image
+        - field_author
+        - field_title
+        - field_company_link
+        - field_author_external_links
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: about-author-info
+        show_empty_fields: false
+      label: 'Author Info Container'
+    group_author_bio:
+      children:
+        - field_body_header
+        - body
+        - group_hobbies_
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: about-author-bio
+        show_empty_fields: false
+      label: 'Author BIo Container'
+    group_hobbies_:
+      children:
+        - field_notable_skills
+        - field_hobbies
+      parent_name: group_author_bio
+      weight: 5
+      format_type: html_element
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: about-author-hobbies-skills
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Hobbies/Skills Container'
+    group_a:
+      children:
+        - field_content_reference
+      parent_name: ''
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: about-author-view
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Author View Container'
 id: node.about_me.default
 targetEntityType: node
 bundle: about_me
@@ -27,27 +116,29 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     region: content
   field_author:
-    weight: 102
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_author_external_links:
-    weight: 105
+    weight: 8
     label: hidden
     settings:
       target: _blank
       linkicon_prefix: fa
       linkicon_wrapper_class: ''
       linkicon_icon_class: ''
+      linkicon_load: true
       linkicon_style: ''
       linkicon_color: ''
+      linkicon_no_text: true
       linkicon_maxlength: 60
       linkicon_global_title: ''
       linkicon_position: ''
@@ -56,24 +147,35 @@ content:
       url_plain: false
       rel: '0'
       linkicon_link: false
-      linkicon_load: false
       linkicon_vertical: false
       linkicon_tooltip: false
-      linkicon_no_text: false
       linkicon_bundle: ''
       trim_length: 80
     third_party_settings: {  }
     type: linkicon
     region: content
+  field_author_image:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+    type: image
+    region: content
   field_body_header:
-    weight: 106
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_company_link:
-    weight: 104
+    weight: 7
     label: hidden
     settings:
       trim_length: 80
@@ -85,7 +187,7 @@ content:
     type: link
     region: content
   field_content_reference:
-    weight: 109
+    weight: 3
     label: hidden
     settings:
       plugin_types:
@@ -94,29 +196,25 @@ content:
     type: viewsreference_formatter
     region: content
   field_hobbies:
-    weight: 107
-    label: hidden
+    weight: 11
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_notable_skills:
-    weight: 108
-    label: hidden
+    weight: 10
+    label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_title:
-    weight: 103
+    weight: 6
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  links:
-    weight: 100
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  links: true
