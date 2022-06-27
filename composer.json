@@ -20,7 +20,7 @@
         "drupal/admin_toolbar_mediteran": "^1.16",
         "drupal/core-composer-scaffold": "^9.2",
         "drupal/core-project-message": "^9.2",
-        "drupal/core-recommended": "^9.2",
+        "drupal/core-recommended": "^9.4.1",
         "drupal/field_group": "^3.2",
         "drupal/linkicon": "^1.7",
         "drupal/svg_image": "^1.15",
