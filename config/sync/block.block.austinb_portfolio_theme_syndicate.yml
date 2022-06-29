@@ -1,0 +1,23 @@
+uuid: 468d2302-f470-41cd-9c06-64e2925f1d2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - austinb_portfolio_theme
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: austinb_portfolio_theme_syndicate
+theme: austinb_portfolio_theme
+region: navigation
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

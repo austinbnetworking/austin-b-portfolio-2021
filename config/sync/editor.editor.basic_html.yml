@@ -1,4 +1,4 @@
-uuid: ce2ec242-fee3-416b-8eb7-4bfce5dc0d72
+uuid: 40ce56bb-1e12-4c5e-8775-460def0e61f2
 langcode: en
 status: true
 dependencies:
@@ -19,13 +19,6 @@ settings:
           items:
             - Bold
             - Italic
-            - Underline
-            - JustifyCenter
-            - JustifyRight
-            - JustifyLeft
-            - JustifyBlock
-            - Table
-            - HorizontalRule
         -
           name: Linking
           items:
@@ -41,7 +34,6 @@ settings:
           items:
             - Blockquote
             - DrupalImage
-            - DrupalFontAwesome
         -
           name: 'Block Formatting'
           items:
@@ -50,16 +42,7 @@ settings:
           name: Tools
           items:
             - Source
-        -
-          name: 'Copy &amp; Paste'
-          items:
-            - PasteFromWord
-            - Copy
-            - PasteText
-            - Paste
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: ''
 image_upload:
@@ -68,5 +51,5 @@ image_upload:
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

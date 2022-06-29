@@ -1,4 +1,4 @@
-uuid: e5bae9c0-f10d-489c-a5ba-3dbb3eba8e87
+uuid: c1c55e65-ebbd-48db-b907-0ad86d431596
 langcode: en
 status: true
 dependencies:
@@ -17,7 +17,6 @@ settings:
         -
           name: Formatting
           items:
-            - Underline
             - Bold
             - Italic
             - Strike
@@ -25,10 +24,6 @@ settings:
             - Subscript
             - '-'
             - RemoveFormat
-            - JustifyLeft
-            - JustifyCenter
-            - JustifyRight
-            - JustifyBlock
         -
           name: Linking
           items:
@@ -46,8 +41,6 @@ settings:
             - DrupalImage
             - Table
             - HorizontalRule
-            - DrupalFontAwesome
-            - PasteFromWord
         -
           name: 'Block Formatting'
           items:
@@ -58,8 +51,6 @@ settings:
             - ShowBlocks
             - Source
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: ''
 image_upload:
@@ -68,5 +59,5 @@ image_upload:
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

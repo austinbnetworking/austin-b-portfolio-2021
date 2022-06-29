@@ -1,8 +1,0 @@
-uuid: db3f69af-1bae-4b94-a066-4b882f475b7f
-langcode: en
-status: true
-dependencies: {  }
-id: footer_external_links
-label: 'Footer External Links'
-revision: 0
-description: 'Use <i>Footer External Links</i> for adding link icons to the footer.'

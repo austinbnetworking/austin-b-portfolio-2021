@@ -1,8 +1,0 @@
-uuid: 73e83a60-55fc-4c81-a1bb-eea9abcca9b8
-langcode: en
-status: true
-dependencies: {  }
-id: footer_main
-label: 'Footer Main'
-revision: 0
-description: 'Use <i>Footer Main</i> for adding content to the footer. '

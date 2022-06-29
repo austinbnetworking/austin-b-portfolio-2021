@@ -1,0 +1,22 @@
+uuid: 0744109c-830a-4355-8165-011ced96a1ad
+langcode: en
+status: true
+dependencies:
+  theme:
+    - austinb_portfolio_theme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: austinb_portfolio_theme_primary_local_tasks
+theme: austinb_portfolio_theme
+region: navigation
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

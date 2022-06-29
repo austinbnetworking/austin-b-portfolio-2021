@@ -1,4 +1,4 @@
-uuid: fe9b5b8d-6538-4789-91f4-a679a64696d2
+uuid: 4b061f28-3ad1-4e62-a64f-dd0e0564f338
 langcode: en
 status: true
 dependencies:
@@ -9,19 +9,19 @@ dependencies:
   theme:
     - austinb_portfolio_theme
 _core:
-  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
+  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
 id: austinb_portfolio_theme_main_menu
 theme: austinb_portfolio_theme
 region: navigation
-weight: -5
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
   label: 'Main navigation'
-  provider: system
   label_display: '0'
+  provider: system
   level: 1
-  depth: 1
-  expand_all_items: false
+  depth: 2
+  expand_all_items: true
 visibility: {  }

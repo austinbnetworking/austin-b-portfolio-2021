@@ -1,4 +1,4 @@
-uuid: 34ce008f-ce6a-4b39-a922-da105d233cc1
+uuid: 1b7a5761-ffd5-4da2-99dc-48830e25b410
 langcode: en
 status: true
 dependencies:
@@ -7,16 +7,16 @@ dependencies:
   theme:
     - austinb_portfolio_theme
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
 id: austinb_portfolio_theme_messages
 theme: austinb_portfolio_theme
-region: content
+region: navigation
 weight: -5
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
   label: 'Status messages'
-  provider: system
   label_display: '0'
+  provider: system
 visibility: {  }

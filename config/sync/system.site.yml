@@ -1,14 +1,14 @@
-uuid: b6b563bb-cbeb-47a8-86f1-d24ef953ddfe
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 5e83b3fe-dd87-4aaf-a4d5-a062c77e3d95
 name: 'Austin Brown Portfolio'
 mail: austinbnetworking@gmail.com
-slogan: 'Hello, I''m Austin Brown. <i class="far fa-handshake"></i>'
+slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/4
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE

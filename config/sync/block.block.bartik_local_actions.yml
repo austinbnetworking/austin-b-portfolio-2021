@@ -1,11 +1,11 @@
-uuid: c9c20e0a-274f-4677-8e2f-e7a45231872d
+uuid: 02ae19fb-2cb9-4a5e-adbe-15089f3ba0e7
 langcode: en
 status: true
 dependencies:
   theme:
     - bartik
 _core:
-  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
 id: bartik_local_actions
 theme: bartik
 region: content
@@ -15,6 +15,6 @@ plugin: local_actions_block
 settings:
   id: local_actions_block
   label: 'Primary admin actions'
-  provider: core
   label_display: '0'
+  provider: core
 visibility: {  }
