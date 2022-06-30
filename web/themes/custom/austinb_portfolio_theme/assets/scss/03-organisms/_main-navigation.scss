@@ -1,0 +1,81 @@
+.navigation-wrapper { 
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    .region-navigation {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;  
+        .site-branding {
+            .site-branding__text {
+                display: block;
+                margin: 0;
+                padding: 0;
+                .site-branding__slogan { 
+                    margin: 0;
+                    word-spacing: unset;
+                    font-family: "Segoe-UI-Bold";
+                    font-size: 1.25rem;
+                    font-style: normal;
+                    svg { 
+                        margin-left: 0.75rem;
+                    }
+                }
+            }
+        }
+        .navigation { 
+            margin-left: auto;
+            .content { 
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                .theme-toggle {
+                    background-color: var(--content-background);
+                    border: 2px solid var(--background);
+                    border-radius: 100%;
+                    padding: 0.64rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: fit-content;
+                    cursor: pointer;
+                    svg { 
+                        width: 18px;
+                        height: 18px;
+                    }
+                    &:hover {
+                        background-color: var(--hover-background);
+                        color: var(--hover-color);
+                        transition: ease-in-out 150ms;
+                    }
+                }
+                .menu { 
+                    padding: 0;
+                    padding-left: 1rem;
+                    text-align: unset;
+                    .menu-item { 
+                        padding-top: 0;
+                        a { 
+                            border: 2px solid var(--background);
+                            border-radius: 2rem;
+                            padding: 0.62rem 2rem;
+                            display: block;
+                            color: black;
+                            font-family: "Segoe UI";
+                            &:hover { 
+                                background-color: var(--hover-background);
+                                color: var(--hover-color);
+                                transition: ease-in-out 150ms;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

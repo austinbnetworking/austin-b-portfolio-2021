@@ -1,0 +1,20 @@
+uuid: c60b0f70-947d-4c7a-932c-7d321fec2cbd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - austinb_portfolio_theme
+id: mainpagecontent
+theme: austinb_portfolio_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main Content'
+  label_display: '0'
+  provider: system
+visibility: {  }

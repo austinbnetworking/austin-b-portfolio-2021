@@ -1,0 +1,25 @@
+uuid: 39658494-e4b5-4a3d-8c40-de467916238c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:22b3a103-8109-40d5-9771-f2d080304185'
+  module:
+    - block_content
+  theme:
+    - austinb_portfolio_theme
+id: customsitebranding
+theme: austinb_portfolio_theme
+region: main_navigation
+weight: 0
+provider: null
+plugin: 'block_content:22b3a103-8109-40d5-9771-f2d080304185'
+settings:
+  id: 'block_content:22b3a103-8109-40d5-9771-f2d080304185'
+  label: 'Custom Site Branding'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

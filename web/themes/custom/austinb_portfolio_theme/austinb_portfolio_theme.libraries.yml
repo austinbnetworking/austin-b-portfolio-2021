@@ -2,9 +2,9 @@ styles:
   version: VERSION
   css:
     theme:
-      css/styles.css: {}
+      dist/styles.css: {}
 
 scripts:
   version: VERSION
   js:
-    js/theme_toggle.js: {}
+    assets/js/theme_toggle.js: {}

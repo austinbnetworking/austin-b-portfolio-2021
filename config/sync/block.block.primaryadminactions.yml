@@ -1,0 +1,29 @@
+uuid: d4c5a0ae-8137-4eaf-8204-8a727f083a99
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - austinb_portfolio_theme
+id: primaryadminactions
+theme: austinb_portfolio_theme
+region: status_message
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Admin Actions'
+  label_display: '0'
+  provider: core
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

@@ -1,0 +1,25 @@
+uuid: e8276172-7115-4892-8d8d-8056d2506165
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - austinb_portfolio_theme
+id: mainnavigation
+theme: austinb_portfolio_theme
+region: main_navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main Navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

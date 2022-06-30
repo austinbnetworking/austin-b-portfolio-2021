@@ -1,5 +1,5 @@
-name: AustinB Portfolio Theme
-description: Custom theme built by Austin Brown for a web dev portfolio.
+name: Austin Brown Portfolio Theme
+description: Custom 2021 portfolio theme.
 type: theme
 version: VERSION
 core_version_requirement: ^8 || ^9
@@ -9,8 +9,11 @@ libraries:
   - austinb_portfolio_theme/scripts
 
 regions:
-  navigation: Navigation
-  breadcrumb: Breadcrumb
+  pre_navigation: Pre Navigation
+  main_navigation: Main Navigation
+  status_message: Status Message
+  breadcrumbs: Breadcrumbs
   content: Main Content
-  footer_left: Footer Left
+  pre_footer: Pre Footer
+  footer_main: Footer Main
   footer_right: Footer RIght

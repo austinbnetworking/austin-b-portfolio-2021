@@ -1,0 +1,18 @@
+uuid: 9ca141bc-fd1c-4aa5-b213-7e483733fba8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - austinb_portfolio_theme
+id: pagetitle
+theme: austinb_portfolio_theme
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page Title'
+  label_display: '0'
+  provider: core
+visibility: {  }

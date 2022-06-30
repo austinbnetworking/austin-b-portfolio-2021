@@ -1,0 +1,159 @@
+/*
+THEME CUSTOM STYLES
+---------------------------------------------
+!! Copy this file to your project's scss root
+---------------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
+----------------------------------------
+*/
+/**
+* This theme uses css variables, instead of scss variables:
+* - This provides a way to toggle the theme dynamically. 
+*/
+:root {
+  --header-text: #2a2a2a;
+  --body-text: #2a2a2a;
+  --link: #9b7827;
+  --accent: #eed7a1;
+  --background: #f7efd2;
+  --content-background: #fcf8ea;
+  --footer-link: #8caec8;
+  --footer-text: #c8e7ff;
+  --footer-background: #475c6c;
+  --light: #ffffff; }
+
+@font-face {
+  font-family: "Segoe UI";
+  /*a name to be used later*/
+  src: url("../fonts/segoeui.ttf");
+  /*URL to font*/ }
+
+@font-face {
+  font-family: "Segoe-UI-Bold";
+  /*a name to be used later*/
+  src: url("../fonts/segoeuib.ttf");
+  /*URL to font*/ }
+
+body {
+  transition: ease-in-out 200ms;
+  background-color: var(--background); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Headers */
+h1 {
+  color: var(--header-text); }
+  h1 a {
+    color: var(--header-text); }
+
+h2 {
+  color: var(--header-text); }
+  h2 a {
+    color: var(--header-text); }
+
+h3 {
+  color: var(--header-text); }
+  h3 a {
+    color: var(--header-text); }
+
+h4 {
+  color: var(--header-text); }
+  h4 a {
+    color: var(--header-text); }
+
+h5 {
+  color: var(--header-text); }
+  h5 a {
+    color: var(--header-text); }
+
+h6 {
+  color: var(--header-text); }
+  h6 a {
+    color: var(--header-text); }
+
+/* Basic Body Styling */
+body,
+p {
+  color: var(--body-text); }
+
+a {
+  color: var(--link);
+  text-decoration: none; }
+  a:hover {
+    color: var(--body-text);
+    text-decoration: underline; }
+
+/* Primary Admin Tasks */
+#block-iid-primary-local-tasks {
+  margin-bottom: 2rem; }
+
+.navigation-wrapper {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  .navigation-wrapper .region-navigation {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; }
+    .navigation-wrapper .region-navigation .site-branding .site-branding__text {
+      display: block;
+      margin: 0;
+      padding: 0; }
+      .navigation-wrapper .region-navigation .site-branding .site-branding__text .site-branding__slogan {
+        margin: 0;
+        word-spacing: unset;
+        font-family: "Segoe-UI-Bold";
+        font-size: 1.25rem;
+        font-style: normal; }
+        .navigation-wrapper .region-navigation .site-branding .site-branding__text .site-branding__slogan svg {
+          margin-left: 0.75rem; }
+    .navigation-wrapper .region-navigation .navigation {
+      margin-left: auto; }
+      .navigation-wrapper .region-navigation .navigation .content {
+        margin-top: 0;
+        display: flex;
+        align-items: center; }
+        .navigation-wrapper .region-navigation .navigation .content .theme-toggle {
+          background-color: var(--content-background);
+          border: 2px solid var(--background);
+          border-radius: 100%;
+          padding: 0.64rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: fit-content;
+          cursor: pointer; }
+          .navigation-wrapper .region-navigation .navigation .content .theme-toggle svg {
+            width: 18px;
+            height: 18px; }
+          .navigation-wrapper .region-navigation .navigation .content .theme-toggle:hover {
+            background-color: var(--hover-background);
+            color: var(--hover-color);
+            transition: ease-in-out 150ms; }
+        .navigation-wrapper .region-navigation .navigation .content .menu {
+          padding: 0;
+          padding-left: 1rem;
+          text-align: unset; }
+          .navigation-wrapper .region-navigation .navigation .content .menu .menu-item {
+            padding-top: 0; }
+            .navigation-wrapper .region-navigation .navigation .content .menu .menu-item a {
+              border: 2px solid var(--background);
+              border-radius: 2rem;
+              padding: 0.62rem 2rem;
+              display: block;
+              color: black;
+              font-family: "Segoe UI"; }
+              .navigation-wrapper .region-navigation .navigation .content .menu .menu-item a:hover {
+                background-color: var(--hover-background);
+                color: var(--hover-color);
+                transition: ease-in-out 150ms; }

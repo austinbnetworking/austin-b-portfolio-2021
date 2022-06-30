@@ -36,24 +36,31 @@
  */
 #}
 
-<nav class="navigation-wrapper">
-    {{ page.navigation }}
-</nav>
+<header id="ab-header" class="ab-header">
+    {% if page.pre_navigation %}
+        <nav class="pre-navigation">
+            {{ page.pre_navigation }}
+        </nav>
+    {% endif %}
+    <nav class="main-navigation">
+        {{ page.main_navigation }}
+    </nav>
+</header>
 
-<main class="main-content-wrapper">
+<main id="ab-main" class="ab-main">
     {% if page.breadcrumbs %}
-      <div class="breadcrumbs-wrapper">
+      <div class="breadcrumbs">
         {{ page.breadcrumbs }}
       </div>
     {% endif %}
-    <div class="main-content-interior">
+    <div class="page-content">
         {{ page.content }}
     </div>
 </main>
 
-<footer class="footer-wrapper">
-    <div class="footer-interior">
-        <div class="footer-interior-left">{{ page.footer_left }}</div>
-        <div class="footer-interior-right">{{ page.footer_right }}</div>
-    </div>
+<footer id="ab-footer" class="ab-footer">
+    <div class="left-footer">{{ page.footer_main }}</div>
+    {% if page.footer_right %}
+        <div class="right-footer">{{ page.footer_right }}</div>
+    {% endif %}
 </footer>

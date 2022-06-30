@@ -1,0 +1,19 @@
+/**
+* This theme uses css variables, instead of scss variables:
+* - This provides a way to toggle the theme dynamically. 
+*/
+:root {
+    // Text
+    --header-text: #2a2a2a;
+    --body-text: #2a2a2a;
+    --link: #9b7827;
+    // Layout 
+    --accent: #eed7a1;
+    --background: #f7efd2;
+    --content-background: #fcf8ea;
+    --footer-link: #8caec8;
+    --footer-text: #c8e7ff;
+    --footer-background: #475c6c;
+    // Shades 
+    --light: #ffffff;
+}

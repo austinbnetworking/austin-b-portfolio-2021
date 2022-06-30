@@ -1,0 +1,77 @@
+// Fonts
+@font-face {
+    font-family: "Segoe UI"; /*a name to be used later*/
+    src: url("../fonts/segoeui.ttf"); /*URL to font*/
+}
+@font-face {
+    font-family: "Segoe-UI-Bold"; /*a name to be used later*/
+    src: url("../fonts/segoeuib.ttf"); /*URL to font*/
+}
+
+body {
+    transition: ease-in-out 200ms;
+    background-color: var(--background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Headers */
+h1 {
+    color: var(--header-text);
+    a {
+        color: var(--header-text);
+    }
+}
+h2 {
+    color: var(--header-text);
+    a {
+        color: var(--header-text);
+    }
+}
+h3 {
+    color: var(--header-text);
+    a {
+        color: var(--header-text);
+    }
+}
+h4 {
+    color: var(--header-text);
+    a {
+        color: var(--header-text);
+    }
+}
+h5 {
+    color: var(--header-text);
+    a {
+        color: var(--header-text);
+    }
+}
+h6 {
+    color: var(--header-text);
+    a {
+        color: var(--header-text);
+    }
+}
+
+/* Basic Body Styling */
+body,
+p {
+    color: var(--body-text);
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+    &:hover {
+        color: var(--body-text);
+        text-decoration: underline;
+    }
+}
+
+/* Primary Admin Tasks */
+#block-iid-primary-local-tasks {
+    margin-bottom: 2rem;
+}
