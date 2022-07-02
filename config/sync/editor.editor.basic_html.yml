@@ -17,8 +17,18 @@ settings:
         -
           name: Formatting
           items:
+            - Underline
             - Bold
             - Italic
+            - Strike
+            - Table
+        -
+          name: Alignment
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
         -
           name: Linking
           items:
@@ -34,22 +44,29 @@ settings:
           items:
             - Blockquote
             - DrupalImage
+            - DrupalFontAwesome
         -
-          name: 'Block Formatting'
+          name: Formatting
           items:
             - Format
+            - Styles
         -
           name: Tools
           items:
+            - Undo
+            - Redo
             - Source
+            - Maximize
   plugins:
     stylescombo:
       styles: ''
+    language:
+      language_list: un
 image_upload:
   status: true
   scheme: public
   directory: inline-images
-  max_size: ''
+  max_size: '15 MB'
   max_dimensions:
-    width: 0
-    height: 0
+    width: 1920
+    height: 1080

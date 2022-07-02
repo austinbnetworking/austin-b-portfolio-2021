@@ -12,6 +12,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
@@ -22,9 +26,12 @@
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.4.1",
         "drupal/field_group": "^3.2",
+        "drupal/fontawesome": "^2.23",
         "drupal/linkicon": "^1.7",
         "drupal/svg_image": "^1.15",
         "drupal/viewsreference": "^1.7",
+        "npm-asset/fortawesome--fontawesome-free": "^6.1",
+        "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^5.4"
     },
     "conflict": {
@@ -37,7 +44,8 @@
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true
+            "drupal/core-project-message": true,
+            "oomphinc/composer-installers-extender": true
         }
     },
     "autoload": {
@@ -51,12 +59,21 @@
                 "web-root": "web/"
             }
         },
+        "installer-types": [
+            "npm-asset",
+            "bower-asset"
+        ],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
             ],
+            "web/libraries/fontawesome": [
+                "npm-asset/fortawesome--fontawesome-free"
+            ],
             "web/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "type:npm-asset",
+                "type:bower-asset"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
@@ -78,27 +95,6 @@
             ],
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
-            ]
-        },
-        "drupal-core-project-message": {
-            "include-keys": [
-                "homepage",
-                "support"
-            ],
-            "post-create-project-cmd-message": [
-                "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
-                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
-                "<bg=blue;fg=white>                                                         </>",
-                "",
-                "<bg=yellow;fg=black>Next steps</>:",
-                "  * Install the site: https://www.drupal.org/docs/8/install",
-                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-                "  * Get support: https://www.drupal.org/support",
-                "  * Get involved with the Drupal community:",
-                "      https://www.drupal.org/getting-involved",
-                "  * Remove the plugin that prints this message:",
-                "      composer remove drupal/core-project-message"
             ]
         }
     }
