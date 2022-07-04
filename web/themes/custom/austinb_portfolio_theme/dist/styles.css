@@ -28,13 +28,13 @@ i.e.
 @font-face {
   font-family: "Segoe UI";
   /*a name to be used later*/
-  src: url("../fonts/segoeui.ttf");
+  src: url("../../fonts/segoeui.ttf");
   /*URL to font*/ }
 
 @font-face {
   font-family: "Segoe-UI-Bold";
   /*a name to be used later*/
-  src: url("../fonts/segoeuib.ttf");
+  src: url("../../fonts/segoeuib.ttf");
   /*URL to font*/ }
 
 body {
@@ -47,31 +47,38 @@ body {
 
 /* Headers */
 h1 {
+  font-family: "Segoe-UI-Bold";
+  font-family: "Segoe-UI-Bold";
   color: var(--header-text); }
   h1 a {
     color: var(--header-text); }
 
 h2 {
+  font-family: "Segoe-UI-Bold";
   color: var(--header-text); }
   h2 a {
     color: var(--header-text); }
 
 h3 {
+  font-family: "Segoe-UI-Bold";
   color: var(--header-text); }
   h3 a {
     color: var(--header-text); }
 
 h4 {
+  font-family: "Segoe-UI-Bold";
   color: var(--header-text); }
   h4 a {
     color: var(--header-text); }
 
 h5 {
+  font-family: "Segoe-UI-Bold";
   color: var(--header-text); }
   h5 a {
     color: var(--header-text); }
 
 h6 {
+  font-family: "Segoe-UI-Bold";
   color: var(--header-text); }
   h6 a {
     color: var(--header-text); }
@@ -79,81 +86,77 @@ h6 {
 /* Basic Body Styling */
 body,
 p {
+  font-family: "Segoe UI";
   color: var(--body-text); }
 
 a {
   color: var(--link);
-  text-decoration: none; }
+  text-decoration: none;
+  border-bottom: none; }
   a:hover {
     color: var(--body-text);
-    text-decoration: underline; }
+    text-decoration: underline;
+    border-bottom: none; }
 
 /* Primary Admin Tasks */
 #block-iid-primary-local-tasks {
   margin-bottom: 2rem; }
 
-.navigation-wrapper {
-  background-color: white;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1; }
-  .navigation-wrapper .region-navigation {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
+/* Font awesome inline/ckeditor icons */
+.fontawesome-icon-inline {
+  min-width: 16px;
+  min-height: 16px;
+  max-width: 24px;
+  max-height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .fontawesome-icon-inline svg {
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 24px;
+    max-height: 24px; }
+
+header#ab-header {
+  border: 1px solid red;
+  background-color: white; }
+  header#ab-header .fontawesome-icon-inline {
+    width: auto;
+    height: 20px; }
+    header#ab-header .fontawesome-icon-inline svg {
+      width: auto;
+      height: 20px; }
+  header#ab-header .main-navigation .region-main-navigation {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: flex-start; }
-    .navigation-wrapper .region-navigation .site-branding .site-branding__text {
-      display: block;
-      margin: 0;
-      padding: 0; }
-      .navigation-wrapper .region-navigation .site-branding .site-branding__text .site-branding__slogan {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem; }
+    header#ab-header .main-navigation .region-main-navigation .block .content {
+      margin: 0; }
+      header#ab-header .main-navigation .region-main-navigation .block .content p {
         margin: 0;
-        word-spacing: unset;
-        font-family: "Segoe-UI-Bold";
-        font-size: 1.25rem;
-        font-style: normal; }
-        .navigation-wrapper .region-navigation .site-branding .site-branding__text .site-branding__slogan svg {
-          margin-left: 0.75rem; }
-    .navigation-wrapper .region-navigation .navigation {
-      margin-left: auto; }
-      .navigation-wrapper .region-navigation .navigation .content {
-        margin-top: 0;
         display: flex;
+        justify-content: flex-start;
         align-items: center; }
-        .navigation-wrapper .region-navigation .navigation .content .theme-toggle {
-          background-color: var(--content-background);
-          border: 2px solid var(--background);
-          border-radius: 100%;
-          padding: 0.64rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: fit-content;
-          cursor: pointer; }
-          .navigation-wrapper .region-navigation .navigation .content .theme-toggle svg {
-            width: 18px;
-            height: 18px; }
-          .navigation-wrapper .region-navigation .navigation .content .theme-toggle:hover {
-            background-color: var(--hover-background);
-            color: var(--hover-color);
-            transition: ease-in-out 150ms; }
-        .navigation-wrapper .region-navigation .navigation .content .menu {
-          padding: 0;
-          padding-left: 1rem;
-          text-align: unset; }
-          .navigation-wrapper .region-navigation .navigation .content .menu .menu-item {
-            padding-top: 0; }
-            .navigation-wrapper .region-navigation .navigation .content .menu .menu-item a {
-              border: 2px solid var(--background);
-              border-radius: 2rem;
-              padding: 0.62rem 2rem;
-              display: block;
-              color: black;
-              font-family: "Segoe UI"; }
-              .navigation-wrapper .region-navigation .navigation .content .menu .menu-item a:hover {
-                background-color: var(--hover-background);
-                color: var(--hover-color);
-                transition: ease-in-out 150ms; }
+    header#ab-header .main-navigation .region-main-navigation .block#block-sitebranding {
+      font-weight: 700;
+      font-size: 1rem; }
+      header#ab-header .main-navigation .region-main-navigation .block#block-sitebranding .fontawesome-icon-inline {
+        margin-left: 0.5rem; }
+    header#ab-header .main-navigation .region-main-navigation .block#block-themetoggle {
+      margin-left: auto; }
+      header#ab-header .main-navigation .region-main-navigation .block#block-themetoggle .fontawesome-icon-inline {
+        border: 2px solid var(--accent);
+        background-color: var(--content-background);
+        border-radius: 50%;
+        padding: 0.5rem;
+        position: relative;
+        aspect-ratio: 1 / 1; }
+        header#ab-header .main-navigation .region-main-navigation .block#block-themetoggle .fontawesome-icon-inline svg {
+          position: absolute; }

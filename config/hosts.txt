@@ -1,0 +1,3 @@
+^austinb\.net$
+^www\.austinb\.net$
+^austinb\.docksal\.site$

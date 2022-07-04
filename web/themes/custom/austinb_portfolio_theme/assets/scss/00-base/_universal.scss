@@ -1,11 +1,11 @@
 // Fonts
 @font-face {
     font-family: "Segoe UI"; /*a name to be used later*/
-    src: url("../fonts/segoeui.ttf"); /*URL to font*/
+    src: url("../../fonts/segoeui.ttf"); /*URL to font*/
 }
 @font-face {
     font-family: "Segoe-UI-Bold"; /*a name to be used later*/
-    src: url("../fonts/segoeuib.ttf"); /*URL to font*/
+    src: url("../../fonts/segoeuib.ttf"); /*URL to font*/
 }
 
 body {
@@ -20,36 +20,43 @@ body {
 
 /* Headers */
 h1 {
+    font-family: "Segoe-UI-Bold";
+    font-family: "Segoe-UI-Bold";
     color: var(--header-text);
     a {
         color: var(--header-text);
     }
 }
 h2 {
+    font-family: "Segoe-UI-Bold";
     color: var(--header-text);
     a {
         color: var(--header-text);
     }
 }
 h3 {
+    font-family: "Segoe-UI-Bold";
     color: var(--header-text);
     a {
         color: var(--header-text);
     }
 }
 h4 {
+    font-family: "Segoe-UI-Bold";
     color: var(--header-text);
     a {
         color: var(--header-text);
     }
 }
 h5 {
+    font-family: "Segoe-UI-Bold";
     color: var(--header-text);
     a {
         color: var(--header-text);
     }
 }
 h6 {
+    font-family: "Segoe-UI-Bold";
     color: var(--header-text);
     a {
         color: var(--header-text);
@@ -59,15 +66,18 @@ h6 {
 /* Basic Body Styling */
 body,
 p {
+    font-family: "Segoe UI";
     color: var(--body-text);
 }
 
 a {
     color: var(--link);
     text-decoration: none;
+    border-bottom: none;
     &:hover {
         color: var(--body-text);
         text-decoration: underline;
+        border-bottom: none;
     }
 }
 
