@@ -3,11 +3,69 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_bio_title
+    - field.field.user.user.field_company
+    - field.field.user.user.field_hobbies
+    - field.field.user.user.field_job_title
+    - field.field.user.user.field_links
+    - field.field.user.user.field_name
+    - field.field.user.user.field_notable_skills
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - field_group
+    - linkicon
     - svg_image
+    - text
     - user
+third_party_settings:
+  field_group:
+    group_general_information:
+      children:
+        - user_picture
+        - field_name
+        - field_job_title
+        - field_company
+        - field_links
+      label: 'General Information'
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+    group_addt_l_information:
+      children:
+        - field_bio_title
+        - field_bio
+        - field_notable_skills
+        - field_hobbies
+      label: 'Addt''l Information'
+      parent_name: ''
+      region: content
+      weight: 6
+      format_type: html_element
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
 _core:
   default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
 id: user.user.default
@@ -15,8 +73,86 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  member_for:
+  field_bio:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_bio_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_company:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_hobbies:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_job_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_links:
+    type: linkicon
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
+      linkicon_prefix: fa
+      linkicon_wrapper_class: ''
+      linkicon_icon_class: ''
+      linkicon_load: false
+      linkicon_vertical: false
+      linkicon_style: ''
+      linkicon_color: ''
+      linkicon_tooltip: false
+      linkicon_no_text: false
+      linkicon_maxlength: 60
+      linkicon_position: ''
+      linkicon_link: false
+      linkicon_global_title: ''
+      linkicon_size: ''
+      linkicon_bundle: ''
+    third_party_settings: {  }
     weight: 5
+    region: content
+  field_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_notable_skills:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
     region: content
   user_picture:
     type: image
@@ -24,10 +160,15 @@ content:
     settings:
       image_link: content
       image_style: thumbnail
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
   langcode: true
+  member_for: true

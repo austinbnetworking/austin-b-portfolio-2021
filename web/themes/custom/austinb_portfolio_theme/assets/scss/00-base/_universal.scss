@@ -1,3 +1,12 @@
+/**
+* Breakpoints
+* - Mobile - 375px
+* - Tablet - 768px
+* - Laptop - 1366px
+* - Desk   - > 1366px
+*/
+
+
 // Fonts
 @font-face {
     font-family: "Segoe UI"; /*a name to be used later*/
@@ -16,6 +25,7 @@ body {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Headers */
@@ -84,4 +94,9 @@ a {
 /* Primary Admin Tasks */
 #block-iid-primary-local-tasks {
     margin-bottom: 2rem;
+}
+
+/* Page Wrapper */
+div#page-wrapper {
+    height: 100vh;
 }

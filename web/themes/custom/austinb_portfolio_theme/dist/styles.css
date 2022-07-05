@@ -25,6 +25,13 @@ i.e.
   --footer-background: #475c6c;
   --light: #ffffff; }
 
+/**
+* Breakpoints
+* - Mobile - 375px
+* - Tablet - 768px
+* - Laptop - 1366px
+* - Desk   - > 1366px
+*/
 @font-face {
   font-family: "Segoe UI";
   /*a name to be used later*/
@@ -43,7 +50,8 @@ body {
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 /* Headers */
 h1 {
@@ -102,6 +110,10 @@ a {
 #block-iid-primary-local-tasks {
   margin-bottom: 2rem; }
 
+/* Page Wrapper */
+div#page-wrapper {
+  height: 100vh; }
+
 /* Font awesome inline/ckeditor icons */
 .fontawesome-icon-inline {
   min-width: 16px;
@@ -119,44 +131,118 @@ a {
     max-width: 24px;
     max-height: 24px; }
 
+/* HEADER - Regeions: pre-navigation, main-navigation */
 header#ab-header {
-  border: 1px solid red;
-  background-color: white; }
+  user-select: none; }
   header#ab-header .fontawesome-icon-inline {
     width: auto;
-    height: 20px; }
+    height: 20px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0;
+    cursor: pointer; }
     header#ab-header .fontawesome-icon-inline svg {
       width: auto;
       height: 20px; }
-  header#ab-header .main-navigation .region-main-navigation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem; }
-    header#ab-header .main-navigation .region-main-navigation .block .content {
-      margin: 0; }
-      header#ab-header .main-navigation .region-main-navigation .block .content p {
-        margin: 0;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center; }
-    header#ab-header .main-navigation .region-main-navigation .block#block-sitebranding {
-      font-weight: 700;
-      font-size: 1rem; }
-      header#ab-header .main-navigation .region-main-navigation .block#block-sitebranding .fontawesome-icon-inline {
-        margin-left: 0.5rem; }
-    header#ab-header .main-navigation .region-main-navigation .block#block-themetoggle {
-      margin-left: auto; }
-      header#ab-header .main-navigation .region-main-navigation .block#block-themetoggle .fontawesome-icon-inline {
-        border: 2px solid var(--accent);
-        background-color: var(--content-background);
-        border-radius: 50%;
-        padding: 0.5rem;
-        position: relative;
-        aspect-ratio: 1 / 1; }
-        header#ab-header .main-navigation .region-main-navigation .block#block-themetoggle .fontawesome-icon-inline svg {
-          position: absolute; }
+  header#ab-header .pre-navigation {
+    background-color: white; }
+    header#ab-header .pre-navigation .region-pre-navigation {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      height: 75px;
+      max-width: 1080px;
+      padding: 0 1.5rem;
+      margin: 0 auto; }
+      header#ab-header .pre-navigation .region-pre-navigation .block .content {
+        margin: 0; }
+        header#ab-header .pre-navigation .region-pre-navigation .block .content p {
+          margin: 0;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center; }
+      header#ab-header .pre-navigation .region-pre-navigation .block#block-sitebranding {
+        font-weight: 700;
+        font-size: 1rem; }
+      header#ab-header .pre-navigation .region-pre-navigation nav.block-menu {
+        margin-left: auto; }
+        header#ab-header .pre-navigation .region-pre-navigation nav.block-menu .menu {
+          padding: 0;
+          line-height: 1; }
+          header#ab-header .pre-navigation .region-pre-navigation nav.block-menu .menu .menu-item {
+            padding: 0; }
+            header#ab-header .pre-navigation .region-pre-navigation nav.block-menu .menu .menu-item a {
+              display: block;
+              border: 2px solid var(--accent);
+              border-radius: 12px;
+              padding: 0.75rem 1.75rem;
+              color: black;
+              cursor: pointer;
+              font-weight: 500; }
+              header#ab-header .pre-navigation .region-pre-navigation nav.block-menu .menu .menu-item a:hover {
+                transition: ease-in-out 150ms;
+                text-decoration: none;
+                background-color: var(--background); }
+  header#ab-header .main-navigation {
+    background-color: var(--footer-background); }
+    header#ab-header .main-navigation .region-main-navigation {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 0.75rem; }
+      header#ab-header .main-navigation .region-main-navigation .content {
+        margin: 0; }
+        header#ab-header .main-navigation .region-main-navigation .content .menu {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 0; }
+          header#ab-header .main-navigation .region-main-navigation .content .menu .menu-item {
+            padding: 0; }
+            header#ab-header .main-navigation .region-main-navigation .content .menu .menu-item a {
+              display: block;
+              color: var(--footer-text);
+              padding: 0 0.75rem;
+              height: 50px;
+              display: flex;
+              align-items: center; }
+              header#ab-header .main-navigation .region-main-navigation .content .menu .menu-item a:hover {
+                text-decoration: none;
+                box-shadow: 0 -3px 0 0 var(--footer-text) inset;
+                border-bottom: none; }
+
+@media screen and (max-width: 768px) {
+  header#ab-header .fontawesome-icon-inline {
+    height: 16px; }
+    header#ab-header .fontawesome-icon-inline svg {
+      height: 16px; }
+  header#ab-header .pre-navigation .region-pre-navigation {
+    height: 50px; }
+    header#ab-header .pre-navigation .region-pre-navigation .block#block-sitebranding {
+      font-size: 0.9rem; }
+    header#ab-header .pre-navigation .region-pre-navigation nav.block-menu .menu .menu-item a {
+      font-size: 0.8rem;
+      padding: 0.4rem 1.25rem; }
+  header#ab-header .main-navigation .region-main-navigation .content .menu .menu-item a {
+    height: 40px;
+    font-size: 0.8rem; } }
+
+/* PAGE CONTENT - Regions: content */
+main#ab-main {
+  min-height: calc(100% - (125px + 200px));
+  background-color: var(--content-background);
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem; }
+
+@media screen and (max-width: 768px) {
+  main#ab-main {
+    min-height: calc(100% - (90px + 200px)); } }
+
+footer#ab-footer {
+  width: 100%;
+  height: 200px;
+  background-color: var(--footer-background); }

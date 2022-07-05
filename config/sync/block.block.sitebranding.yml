@@ -10,8 +10,8 @@ dependencies:
     - austinb_portfolio_theme
 id: sitebranding
 theme: austinb_portfolio_theme
-region: main_navigation
-weight: -3
+region: pre_navigation
+weight: -2
 provider: null
 plugin: 'block_content:22b3a103-8109-40d5-9771-f2d080304185'
 settings:

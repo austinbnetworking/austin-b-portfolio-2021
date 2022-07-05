@@ -1,0 +1,14 @@
+/* PAGE CONTENT - Regions: content */
+main#ab-main {
+    min-height: calc(100% - (125px + 200px));
+    background-color: var(--content-background);
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    main#ab-main {
+        min-height: calc(100% - (90px + 200px));
+    }
+}

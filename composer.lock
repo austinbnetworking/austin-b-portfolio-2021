@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a277f81f8817d65243ba3863fa27258",
+    "content-hash": "c133881733a6fd2d37bf0967d43569f3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1476,6 +1476,54 @@
             "homepage": "https://www.drupal.org/project/jquery_ui_accordion",
             "support": {
                 "source": "https://git.drupalcode.org/project/jquery_ui_accordion"
+            }
+        },
+        {
+            "name": "drupal/link_icons",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/link_icons.git",
+                "reference": "3.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/link_icons-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "c22412e66e8614201bcb9ebe8a3399a35c5ed2d0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/fontawesome": "^2.0",
+                "drupal/link": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.3",
+                    "datestamp": "1610516182",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Nattriss",
+                    "homepage": "https://www.drupal.org/user/378513",
+                    "email": "dave@natts.com"
+                }
+            ],
+            "description": "Field formatter for Link field to render a Font Awesome icon for the service being linked to (ex. Facebook, Twitter or LinkedIn), with various display options",
+            "homepage": "https://drupal.org/project/link_icons",
+            "support": {
+                "source": "https://git.drupalcode.org/project/link_icons",
+                "issues": "https://drupal.org/project/issues/link_icons"
             }
         },
         {

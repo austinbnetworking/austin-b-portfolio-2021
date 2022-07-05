@@ -1,0 +1,21 @@
+uuid: 8e0e5c98-829f-4c5f-beb3-2980a6681d05
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_bio_title
+field_name: field_bio_title
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

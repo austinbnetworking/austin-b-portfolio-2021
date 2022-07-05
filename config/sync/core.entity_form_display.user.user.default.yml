@@ -3,12 +3,112 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_bio_title
+    - field.field.user.user.field_company
+    - field.field.user.user.field_hobbies
+    - field.field.user.user.field_job_title
+    - field.field.user.user.field_links
+    - field.field.user.user.field_name
+    - field.field.user.user.field_notable_skills
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - field_group
+    - link
     - path
     - svg_image
+    - text
     - user
+third_party_settings:
+  field_group:
+    group_user_tabs:
+      children:
+        - group_basic_info
+        - group_addt_l_info
+        - group_bio
+        - group_security
+      label: 'User Tabs'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        direction: horizontal
+        width_breakpoint: 640
+    group_basic_info:
+      children:
+        - user_picture
+        - field_name
+        - field_job_title
+        - field_company
+        - field_links
+      label: 'Basic Info'
+      region: content
+      parent_name: group_user_tabs
+      weight: 13
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_bio:
+      children:
+        - field_bio_title
+        - field_bio
+      label: Bio
+      region: content
+      parent_name: group_user_tabs
+      weight: 15
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_addt_l_info:
+      children:
+        - field_notable_skills
+        - field_hobbies
+      label: 'Addt''l Info'
+      region: content
+      parent_name: group_user_tabs
+      weight: 14
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_security:
+      children:
+        - account
+        - contact
+        - language
+        - timezone
+        - path
+      label: Security
+      region: content
+      parent_name: group_user_tabs
+      weight: 16
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
 id: user.user.default
@@ -17,26 +117,100 @@ bundle: user
 mode: default
 content:
   account:
-    weight: -10
+    weight: 11
     region: content
+    settings: {  }
+    third_party_settings: {  }
   contact:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bio:
+    type: text_textarea_with_summary
+    weight: 12
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_bio_title:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_company:
+    type: text_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hobbies:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_job_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_links:
+    type: link_default
     weight: 5
     region: content
-  language:
-    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_name:
+    type: string_textfield
+    weight: 2
     region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_notable_skills:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  language:
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   timezone:
-    weight: 6
+    weight: 14
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
-    weight: -1
+    weight: 1
     region: content
     settings:
       progress_indicator: throbber

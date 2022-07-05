@@ -1,22 +1,22 @@
-uuid: e8276172-7115-4892-8d8d-8056d2506165
+uuid: 4275cfbf-2c99-4cd1-97cc-35560e0cb1b9
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.main-menu
   module:
     - system
   theme:
     - austinb_portfolio_theme
-id: mainnavigation
+id: mainmenu
 theme: austinb_portfolio_theme
-region: pre_navigation
-weight: -1
+region: main_navigation
+weight: 0
 provider: null
-plugin: 'system_menu_block:main'
+plugin: 'system_menu_block:main-menu'
 settings:
-  id: 'system_menu_block:main'
-  label: 'Main Navigation'
+  id: 'system_menu_block:main-menu'
+  label: 'Main Menu'
   label_display: '0'
   provider: system
   level: 1

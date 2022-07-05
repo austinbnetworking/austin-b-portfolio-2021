@@ -1,9 +1,17 @@
 uuid: dde9ca9e-7f05-4711-9814-6c7d71d54613
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_bio_title
+    - field.field.user.user.field_company
+    - field.field.user.user.field_hobbies
+    - field.field.user.user.field_job_title
+    - field.field.user.user.field_links
+    - field.field.user.user.field_name
+    - field.field.user.user.field_notable_skills
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -28,5 +36,13 @@ content:
     weight: 0
     region: content
 hidden:
+  field_bio: true
+  field_bio_title: true
+  field_company: true
+  field_hobbies: true
+  field_job_title: true
+  field_links: true
+  field_name: true
+  field_notable_skills: true
   langcode: true
   member_for: true
